@@ -10,7 +10,7 @@
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
-	"EngineVersion": "4.27.0",
+	"EngineVersion": "5.0.0",
 	"CanContainContent": false,
 	"Installed": true,
 	"Modules": [
@@ -18,7 +18,7 @@
 			"Name": "ClothTickExtension",
 			"Type": "Runtime",
 			"LoadingPhase": "PreLoadingScreen",
-			"WhitelistPlatforms": [
+			"PlatformAllowList": [
 				"Win64"
 			]
 		}

@@ -22,6 +22,8 @@ This plugin has been tested using: *Windows*.
 Tested Compatible Engine versions:  
 - 4.26  
 - 4.27  
+- 5.0
+- 5.1
 
 ## License
 This software is under the MIT License.

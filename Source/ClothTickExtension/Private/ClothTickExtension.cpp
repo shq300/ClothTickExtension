@@ -1,3 +1,4 @@
+// Copyright (c) 2026 SHQ. All rights reserved.
 
 #include "ClothTickExtension.h"
 

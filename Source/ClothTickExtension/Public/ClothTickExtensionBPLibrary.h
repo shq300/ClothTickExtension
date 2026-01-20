@@ -1,3 +1,4 @@
+// Copyright (c) 2026 SHQ. All rights reserved.
 
 #pragma once
 
@@ -11,9 +12,9 @@ class UClothTickExtensionBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
 
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Set Tickable when Paused Cloth", Keywords = "ClothTickExtension tick cloth"), Category = "ClothTickExtension")
-		static void SetTickableWhenPausedCloth(const TArray<USkeletalMeshComponent*>& SkeletalMeshes, bool bTickableWhenPaused);
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Set Tickable when Paused Cloth", Keywords = "Cloth Tick Extension"), Category = "ClothTickExtension")
+	static void SetTickableWhenPausedCloth(const TArray<USkeletalMeshComponent*>& SkeletalMeshes, bool bTickableWhenPaused);
 
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Is Tickable when Paused Cloth", Keywords = "ClothTickExtension tick cloth"), Category = "ClothTickExtension")
-		static bool GetIsTickableWhenPausedCloth(USkeletalMeshComponent* SkeletalMesh);
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Is Tickable when Paused Cloth", Keywords = "Cloth Tick Extension"), Category = "ClothTickExtension")
+	static bool GetIsTickableWhenPausedCloth(const USkeletalMeshComponent* SkeletalMesh);
 };

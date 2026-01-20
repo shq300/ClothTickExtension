@@ -3,24 +3,22 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "ClothTickExtension",
-	"Description": "Simple plugin, which adds an option to Set Cloth Simulation Ticking even when the Game is Paused - callable from Blueprints.",
+	"Description": "Simple Unreal Engine plugin, which adds an ability to Set Cloth Simulation to be Tickable even when the Game is Paused - callable from Blueprints.",
 	"Category": "Cloth Simulation",
-	"CreatedBy": "shq300",
+	"CreatedBy": "SHQ",
 	"CreatedByURL": "",
 	"DocsURL": "",
-	"MarketplaceURL": "",
+	"FabURL": "",
 	"SupportURL": "",
-	"EngineVersion": "4.26.0",
+	"EngineVersion": "5.7.0",
 	"CanContainContent": false,
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
 	"Installed": true,
 	"Modules": [
 		{
 			"Name": "ClothTickExtension",
 			"Type": "Runtime",
 			"LoadingPhase": "PreLoadingScreen",
-			"WhitelistPlatforms": [
+			"PlatformAllowList": [
 				"Win64"
 			]
 		}

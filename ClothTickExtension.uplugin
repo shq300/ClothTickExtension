@@ -10,7 +10,7 @@
 	"DocsURL": "",
 	"FabURL": "",
 	"SupportURL": "",
-	"EngineVersion": "5.7.0",
+	"EngineVersion": "5.1.0",
 	"CanContainContent": false,
 	"Installed": true,
 	"Modules": [
@@ -24,3 +24,4 @@
 		}
 	]
 }
+

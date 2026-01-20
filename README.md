@@ -13,6 +13,8 @@ Clone or download the repository into your project's Plugin directory and relaun
 In order to set Tickable When Paused for the Cloth you need to pass an Array of SkeletalMesh Components.  
 Make sure that the option 'Tick Even When Paused' is checked for the connected SkeletalMesh and the owning Actor itself.
 ![Image](/docs/ClothTickPrev.png)  
+⚠️ When using Scene Capture Components, ensure that Tick Even When Paused is enabled and that the Tick Interval remains at its default value (0.0).
+
 Functions from the BPLibrary under *Cloth Tick Extension* Category:  
 - ***Set Tickable when Paused Cloth***  
 - ***Is Tickable when Paused Cloth***
@@ -20,10 +22,7 @@ Functions from the BPLibrary under *Cloth Tick Extension* Category:
 ## Compatibility
 This plugin has been tested using: *Windows*.  
 Tested Compatible Engine versions:  
-- 4.26  
-- 4.27  
-- 5.0
-- 5.1
+**4.26 - 5.7**
 
 ## License
 This software is under the MIT License.

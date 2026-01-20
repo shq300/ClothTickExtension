@@ -1,3 +1,4 @@
+// Copyright (c) 2026 SHQ. All rights reserved.
 
 using UnrealBuildTool;
 
@@ -7,12 +8,44 @@ public class ClothTickExtension : ModuleRules
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
+		PublicIncludePaths.AddRange(
+			new string[] {
+				
+			}
+			);
+				
+		
+		PrivateIncludePaths.AddRange(
+			new string[] {
+				
+			}
+			);
+			
+		
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
 				"Core",
+				
+			}
+			);
+			
+		
+		PrivateDependencyModuleNames.AddRange(
+			new string[]
+			{
 				"CoreUObject",
-				"Engine"
+				"Engine",
+				"Slate",
+				"SlateCore",
+			}
+			);
+		
+		
+		DynamicallyLoadedModuleNames.AddRange(
+			new string[]
+			{
+				
 			}
 			);
 	}

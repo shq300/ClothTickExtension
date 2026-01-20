@@ -1,29 +1,31 @@
+// Copyright (c) 2026 SHQ. All rights reserved.
 
 #include "ClothTickExtensionBPLibrary.h"
-#include "ClothTickExtension.h"
 
 UClothTickExtensionBPLibrary::UClothTickExtensionBPLibrary(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
 
 }
-void UClothTickExtensionBPLibrary::SetTickableWhenPausedCloth(const TArray<USkeletalMeshComponent*>& SkeletalMeshes, bool bTickableWhenPaused)
+void UClothTickExtensionBPLibrary::SetTickableWhenPausedCloth(const TArray<USkeletalMeshComponent*>& SkeletalMeshes, const bool bTickableWhenPaused)
 {
-	for (int32 CompIdx = 0; CompIdx < SkeletalMeshes.Num(); ++CompIdx)
+	for (USkeletalMeshComponent* SkeletalMeshComp : SkeletalMeshes)
 	{
-		USkeletalMeshComponent* const C = SkeletalMeshes[CompIdx];
-		if (C)
+		if (!IsValid(SkeletalMeshComp))
 		{
-			C->ClothTickFunction.bTickEvenWhenPaused = bTickableWhenPaused;
+			continue;
 		}
+		
+		SkeletalMeshComp->ClothTickFunction.bTickEvenWhenPaused = bTickableWhenPaused;
 	}
 }
 
-bool UClothTickExtensionBPLibrary::GetIsTickableWhenPausedCloth(USkeletalMeshComponent* SkeletalMesh)
+bool UClothTickExtensionBPLibrary::GetIsTickableWhenPausedCloth(const USkeletalMeshComponent* SkeletalMesh)
 {
-	USkeletalMeshComponent* C = SkeletalMesh;
-	if (C) {
-		return C->ClothTickFunction.bTickEvenWhenPaused;
+	if (!IsValid(SkeletalMesh))
+	{
+		return false;
 	}
-	return false;
+	
+	return SkeletalMesh->ClothTickFunction.bTickEvenWhenPaused;
 }

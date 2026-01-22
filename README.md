@@ -10,7 +10,7 @@ It's useful for example when you need to pause the game and still want to keep S
 Clone this repository into your project's /Plugins folder, make one if it doesn’t exist, then open your project.
 
 - ## Download from Marketplace
-Download Cloth Tick Extension from [Marketplace Link] and install it in the Engine through Epic Games Launcher.
+Download Cloth Tick Extension from [Marketplace Link](https://www.fab.com/listings/d0dd5f27-4392-4c87-90e0-e471eaa57a5b) and install it in the Engine through Epic Games Launcher.
 
 - ## Setup
 Open your project and Enable the plugin in **Edit→Plugins→Project/Cloth Simulation**.
